@@ -29,6 +29,7 @@ class Courses extends React.Component {
 export default Courses;
 
 const StyledDiv = styled.div`
+  margin: 50px;
   display: flex;
   flex-direction: column;
 `;
