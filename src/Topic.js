@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import theory from "./img/theory.jpeg";
-import codesandbox from "./img/codesandbox.png";
+import codesandbox from "./img/codesangbox.png";
 import practice from "./img/practice.png";
 import comment from "./img/comment.png";
 
