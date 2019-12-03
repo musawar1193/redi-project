@@ -13,7 +13,7 @@ class Topic extends React.Component {
         <StyledHeader>Beginner Lesson</StyledHeader>
         <StyledButton>
           <CoursesLogo src={theory} />
-          THEORY
+          Theory
         </StyledButton>
         <StyledButton>
           <CoursesLogo src={codesandbox} />
