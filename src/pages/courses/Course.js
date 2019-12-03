@@ -5,7 +5,7 @@ export const Course =  ({course}) => {
 
     return(
         <>
-            <Link to={`/course/${course.id}`}>{course.name}</Link>
+            <Link to={`/course/${course.id}`} key={course.id}>{course.title}</Link>
             <br/>
         </>
     )

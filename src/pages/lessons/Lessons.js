@@ -9,7 +9,8 @@ class Lessons extends Component {
     constructor(props){
         super(props);
         this.state = {
-            lessonsLoading : true
+            lessonsLoading : true,
+            course_id : this.props.match.params.course_id
         };
 
     }
@@ -23,7 +24,8 @@ class Lessons extends Component {
     fetchLessons = async (pram) => {
 
 
-        const Snapshot = await lessonsCollection.get();
+        const course_id = this.state.course_id;
+        const Snapshot = await lessonsCollection.where('course_id','==',course_id).get();
         const lessons = Snapshot.docs.map(doc => {
             let data = doc.data();
             data.id =  doc.id;
@@ -44,7 +46,7 @@ class Lessons extends Component {
 
                     this.state.lessonsLoading === false &&
                     this.state.lessons.map((lesson) => (
-                        <Lesson lesson={lesson} />
+                        <Lesson lesson={lesson} course_id={this.props.match.params.course_id} key={lesson.id}/>
                     ))
                 }
 

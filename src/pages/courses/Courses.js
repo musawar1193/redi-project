@@ -42,7 +42,7 @@ class Courses extends Component {
 
                 this.state.coursesLoading === false &&
                     this.state.courses.map((course) => (
-                    <Course course={course} />
+                    <Course course={course} key={course.id}/>
                     ))
                 }
 
