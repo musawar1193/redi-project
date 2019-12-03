@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 export const Sandbox =  (props) => {
         const {title, url, description} = props.details;
+        console.log(title);
     return(
         <>
             <div>

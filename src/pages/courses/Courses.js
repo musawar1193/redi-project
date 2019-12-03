@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {coursesCollection} from '../../services/FireBaseStore'
 import {Course} from "./Course";
+import styled from "styled-components";
+import {StyledDiv, StyledHeader, CoursesLogo, StyledButton} from './CoursesStyle';
 
 class Courses extends Component {
 
@@ -38,6 +40,8 @@ class Courses extends Component {
 
         return (
             <>
+                <StyledDiv>
+                    <StyledHeader>Your Courses</StyledHeader>
                 {
 
                 this.state.coursesLoading === false &&
@@ -45,7 +49,7 @@ class Courses extends Component {
                     <Course course={course} key={course.id}/>
                     ))
                 }
-
+                </StyledDiv>
             </>
         )
     }
