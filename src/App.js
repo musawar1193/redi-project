@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Courses from "./pages/courses/Courses";
 import Topic from "./Topic";
+import User from "./User";
 import Main from "./pages/Main/Main";
 import Lessons from "./pages/lessons/Lessons";
 import LessonMaterial from "./pages/lessons/LessonMaterial";
