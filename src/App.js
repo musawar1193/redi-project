@@ -33,6 +33,7 @@ function App() {
       </div>
       <div>
         <Topic />
+        <User />
       </div>
     </Router>
   );
